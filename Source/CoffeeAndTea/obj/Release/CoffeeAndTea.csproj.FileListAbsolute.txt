@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Coffee&Tea\Assemblies\CoffeeAndTea.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Coffee&Tea\Source\CoffeeAndTea\CoffeeAndTea\obj\Release\CoffeeAndTea.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Coffee&Tea\Source\CoffeeAndTea\CoffeeAndTea\obj\Release\CoffeeAndTea.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Coffee&Tea\Source\CoffeeAndTea\CoffeeAndTea\obj\Release\CoffeeAndTea.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Assemblies\CoffeeAndTea.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoffeeAndTea\Source\CoffeeAndTea\obj\Release\CoffeeAndTea.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoffeeAndTea\Source\CoffeeAndTea\obj\Release\CoffeeAndTea.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoffeeAndTea\Source\CoffeeAndTea\obj\Release\CoffeeAndTea.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoffeeAndTea\Source\CoffeeAndTea\obj\Release\CoffeeAndTea.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CoffeeAndTea\Assemblies\CoffeeAndTea.dll
