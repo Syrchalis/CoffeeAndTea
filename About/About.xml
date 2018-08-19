@@ -6,22 +6,18 @@
     <description>Adds coffee and tea. They are plantable drugs, similar to smokeleaf and psychoid, however they are not addictive. They don't require research. Brewing tea or coffee can be done at a stove or campfire. They provide very different benefits and are mutually exclusive.
 	
 Coffee:
-[list]
-[*]Restores rest
-[*]Increases hunger rate
-[*]Decreases tiredness rate
-[*]Increased consciousness and work speed
-[*]Small mood buff
-[*]Increased effect after two cups
-[/list] 
+- Restores rest
+- Increases hunger rate
+- Decreases tiredness rate
+- Increased consciousness and work speed
+- Small mood buff
+- Increased effect after two cups
 	
 Tea:
-[list]
-[*]Restores a little food and rest
-[*]Decreases hunger rate
-[*]Increased learning speed
-[*]Large mood buff
-[/list] 
+- Restores a little food and rest
+- Decreases hunger rate
+- Increased learning speed
+- Large mood buff
 	
 The effects they grant are mutually exclusive. Drinking coffee will remove the tea effect and drinking tea will remove the coffee effect. Both bewerages grant joy in form of luxury, a new type of joy.
 
