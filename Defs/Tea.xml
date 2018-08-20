@@ -78,6 +78,7 @@
     <techLevel>Neolithic</techLevel>
     <ingestible>
 	  <preferability>NeverForNutrition</preferability>
+      <chairSearchRadius>16</chairSearchRadius>
       <foodType>Fluid, Processed</foodType>
       <joyKind>Luxury</joyKind>
       <joy>0.3</joy>
