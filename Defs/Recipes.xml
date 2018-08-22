@@ -25,7 +25,7 @@
 	        <li>SyrRawCoffee</li>
 	      </thingDefs>
 	    </filter>
-	    <count>12</count>
+	    <count>20</count>
 	  </li>
 	</ingredients>
 	<fixedIngredientFilter>
@@ -62,7 +62,7 @@
 	        <li>SyrRawTea</li>
 	      </thingDefs>
 	    </filter>
-	    <count>12</count>
+	    <count>20</count>
 	  </li>
 	</ingredients>
 	<fixedIngredientFilter>

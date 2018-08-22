@@ -20,7 +20,7 @@
     <plant>
       <harvestedThingDef>SyrRawTea</harvestedThingDef>
       <harvestYield>5</harvestYield>
-      <growDays>4.5</growDays>
+      <growDays>6</growDays>
 	  <dieIfLeafless>true</dieIfLeafless>
 	  <harvestTag>Standard</harvestTag>
 	  <sowTags>
@@ -99,6 +99,11 @@
           <hediffDef>SyrTeaHigh</hediffDef>
           <severity>0.35</severity>
         </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SyrCaffeineTolerance</hediffDef>
+          <severity>0.03</severity>
+		  <divideByBodySize>true</divideByBodySize>
+		</li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Food</need>
           <offset>0.1</offset>
@@ -114,6 +119,11 @@
     </ingestible>
     <comps>
       <li Class="CompProperties_Drug">
+        <chemical>SyrCaffeine</chemical>
+        <addictiveness>0.03</addictiveness>
+        <minToleranceToAddict>0.30</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.05</existingAddictionSeverityOffset>
+        <needLevelOffset>0.5</needLevelOffset>
         <listOrder>2</listOrder>
       </li>
     </comps>
@@ -151,7 +161,7 @@
       <li>
         <label>Tea</label>
         <description>I had a soothing cup of tea.</description>
-        <baseMoodEffect>8</baseMoodEffect>
+        <baseMoodEffect>6</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

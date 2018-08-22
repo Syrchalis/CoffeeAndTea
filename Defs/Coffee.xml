@@ -19,8 +19,8 @@
 	<pathCost>10</pathCost>
     <plant>
       <harvestedThingDef>SyrRawCoffee</harvestedThingDef>
-      <harvestYield>5</harvestYield>
-      <growDays>4.5</growDays>
+      <harvestYield>10</harvestYield>
+      <growDays>12</growDays>
 	  <dieIfLeafless>true</dieIfLeafless>
 	  <harvestTag>Standard</harvestTag>
 	  <sowTags>
@@ -99,6 +99,11 @@
           <hediffDef>SyrCoffeeHigh</hediffDef>
           <severity>0.35</severity>
         </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SyrCaffeineTolerance</hediffDef>
+          <severity>0.05</severity>
+		  <divideByBodySize>true</divideByBodySize>
+		</li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
           <offset>0.15</offset>
@@ -110,6 +115,11 @@
     </ingestible>
     <comps>
       <li Class="CompProperties_Drug">
+        <chemical>SyrCaffeine</chemical>
+        <addictiveness>0.05</addictiveness>
+        <minToleranceToAddict>0.20</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
         <listOrder>1</listOrder>
       </li>
     </comps>
@@ -151,7 +161,7 @@
             <capMods>
               <li>
                 <capacity>Consciousness</capacity>
-                <offset>0.15</offset>
+                <offset>0.1</offset>
               </li>
             </capMods>
           <statOffsets>
@@ -170,7 +180,7 @@
       <li>
         <label>Coffee</label>
         <description>I had an energizing cup of coffee.</description>
-        <baseMoodEffect>4</baseMoodEffect>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
