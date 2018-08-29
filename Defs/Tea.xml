@@ -3,7 +3,7 @@
 <Defs>
 
   <ThingDef ParentName="PlantBase">
-    <defName>PlantTea</defName>
+    <defName>Plant_SyrTea</defName>
     <label>tea plant</label>
     <description>A green, leafy plant yielding tea leaves. These leaves can be brewed into a tasty beverage.</description>
     <graphicData>
@@ -33,7 +33,7 @@
         <max>1.1</max>
 	  </visualSizeRange>
 	  <topWindExposure>0.1</topWindExposure>
-	  <purpose>Misc</purpose>
+	  <purpose>Health</purpose>
     </plant>
   </ThingDef>
 

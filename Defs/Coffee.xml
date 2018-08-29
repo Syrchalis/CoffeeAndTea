@@ -3,7 +3,7 @@
 <Defs>
 
   <ThingDef ParentName="PlantBase">
-    <defName>PlantCoffee</defName>
+    <defName>Plant_SyrCoffee</defName>
     <label>coffee plant</label>
     <description>A green, leafy plant yielding coffee beans. These beans can be brewed into a tasty beverage.</description>
     <graphicData>
@@ -21,6 +21,7 @@
       <harvestedThingDef>SyrRawCoffee</harvestedThingDef>
       <harvestYield>10</harvestYield>
       <growDays>12</growDays>
+	  <harvestAfterGrowth>0.05</harvestAfterGrowth>
 	  <dieIfLeafless>true</dieIfLeafless>
 	  <harvestTag>Standard</harvestTag>
 	  <sowTags>
@@ -32,7 +33,7 @@
         <max>1.1</max>
 	  </visualSizeRange>
 	  <topWindExposure>0.1</topWindExposure>
-	  <purpose>Misc</purpose>
+	  <purpose>Health</purpose>
 	  <immatureGraphicPath>Things/Plant/CoffeePlantImmature</immatureGraphicPath>
     </plant>
   </ThingDef>

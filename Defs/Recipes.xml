@@ -3,7 +3,7 @@
 <Defs>
 
   <RecipeDef>
-	<defName>BrewCoffee</defName>
+	<defName>Brew_SyrCoffee</defName>
 	<label>brew coffee</label>
 	<description>Brew four cups of coffee</description>
 	<jobString>Brewing coffee.</jobString>
@@ -40,7 +40,7 @@
   </RecipeDef>
 
   <RecipeDef>
-	<defName>BrewTea</defName>
+	<defName>Brew_SyrTea</defName>
 	<label>brew tea</label>
 	<description>Brew four cups of tea</description>
 	<jobString>Brewing tea.</jobString>
