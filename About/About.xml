@@ -2,7 +2,10 @@
 <ModMetaData>
     <name>[SYR] Coffee and Tea</name>
     <author>Syrchalis</author>
-    <targetVersion>1.0.2059</targetVersion>
+    <supportedVersions>
+        <li>1.0</li>
+        <li>1.1</li>
+    </supportedVersions>
 	<url>https://ludeon.com/forums/index.php?topic=43449</url>
     <description>Adds coffee and tea. They are plantable drugs, similar to smokeleaf and psychoid, however they are not addictive. They don't require research. Brewing tea or coffee can be done at a stove or campfire. They provide very different benefits and are mutually exclusive.
 	
@@ -23,4 +26,13 @@ Tea:
 The effects they grant are mutually exclusive. Drinking coffee will remove the tea effect and drinking tea will remove the coffee effect. Both bewerages grant joy in form of luxury, a new type of joy.
 
 This mod comes with a small C# assembly that allows removal of hediffs by ingestion (interesting if you are a modder and want to use that class) and a patch to the way pawns act. They will avoid drinking tea if they have the coffee effect and vice versa.</description>
+    <packageId>syrchalis.coffeeandtea</packageId>
+    <modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+</modDependencies>
 </ModMetaData>

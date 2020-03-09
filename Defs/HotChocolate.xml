@@ -57,6 +57,7 @@
     <defName>SyrHotChocolateHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>hot chocolate</label>
+    <description>A positive effect on the mood caused by the ingestion of hot chocolate. Makes colder temperatures more tolerable, but warm temperatures less tolerable.</description>
     <labelNoun>effects of hot chocolate</labelNoun>
     <defaultLabelColor>(0.5,0.25,0.125)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>

@@ -12,4 +12,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Sou
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\obj\Release\CoffeeAndTea.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\obj\Release\CoffeeAndTea.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Assemblies\CoffeeAndTea.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\obj\Release\CoffeeAndTea.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\1.1\Assemblies\CoffeeAndTea.dll

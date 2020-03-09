@@ -28,10 +28,7 @@
 		<li>Hydroponic</li>
 	  </sowTags>
 	  <immatureGraphicPath>Things/Plant/TeaPlantImmature</immatureGraphicPath>
-	  <visualSizeRange>
-        <min>0.3</min>
-        <max>1.1</max>
-	  </visualSizeRange>
+    <visualSizeRange>0.5~1.1</visualSizeRange>
 	  <topWindExposure>0.1</topWindExposure>
 	  <purpose>Health</purpose>
     </plant>
@@ -72,7 +69,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>300</WorkToMake>
-      <MarketValue>15</MarketValue>
+      <MarketValue>8</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
     <techLevel>Neolithic</techLevel>
@@ -133,6 +130,7 @@
     <defName>SyrTeaHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>tea</label>
+    <description>A positive effect on learning and a reduction of hunger rate caused by the ingestion of tea.</description>
     <labelNoun>effects of tea</labelNoun>
     <defaultLabelColor>(1,0.5,0)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>

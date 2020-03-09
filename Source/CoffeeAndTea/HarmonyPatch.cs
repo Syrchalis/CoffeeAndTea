@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace CoffeeAndTea
     {
         static HarmonyPatch()
         {
-            var harmony = HarmonyInstance.Create("Syrchalis.Rimworld.CoffeeAndTea");
+            var harmony = new Harmony("Syrchalis.Rimworld.CoffeeAndTea");
             MethodInfo method = typeof(JoyGiver_Ingest).GetMethod("CanIngestForJoy", BindingFlags.NonPublic | BindingFlags.Instance);
             HarmonyMethod prefix = null;
             HarmonyMethod postfix = new HarmonyMethod(typeof(CoffeeAndTea).GetMethod("CanIngestForJoy_Postfix"));

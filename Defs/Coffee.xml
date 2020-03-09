@@ -28,10 +28,7 @@
 		<li>Ground</li>
 		<li>Hydroponic</li>
 	  </sowTags>
-	  <visualSizeRange>
-        <min>0.3</min>
-        <max>1.1</max>
-	  </visualSizeRange>
+	  <visualSizeRange>0.5~1.1</visualSizeRange>
 	  <topWindExposure>0.1</topWindExposure>
 	  <purpose>Health</purpose>
 	  <immatureGraphicPath>Things/Plant/CoffeePlantImmature</immatureGraphicPath>
@@ -130,6 +127,7 @@
     <defName>SyrCoffeeHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>coffee</label>
+    <description>A positive effect on mental abilities caused by the ingestion of coffee.</description>
     <labelNoun>effects of coffee</labelNoun>
     <defaultLabelColor>(1,0.5,0)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>
