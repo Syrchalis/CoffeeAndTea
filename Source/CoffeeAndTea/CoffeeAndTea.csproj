@@ -55,13 +55,18 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoffeeAndTea.cs" />
+    <Compile Include="CoffeeAndTeaCore.cs" />
     <Compile Include="CoffeeAndTeaDefOf.cs" />
-    <Compile Include="HarmonyPatch.cs" />
-    <Compile Include="IngestionOutcomeDoer_RemoveHediff.cs" />
+    <Compile Include="Thought_CoffeeVsTea.cs" />
+    <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="IngestionOutcomeDoer_CoffeeAndTea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThougtWorker_CoffeeTea.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

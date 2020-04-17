@@ -19,5 +19,6 @@ namespace CoffeeAndTea
         public static HediffDef SyrTeaHigh;
         public static ThingDef SyrCoffee;
         public static ThingDef SyrTea;
+        public static ThingDef SyrHotChocolate;
     }
 }
