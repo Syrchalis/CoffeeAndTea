@@ -69,7 +69,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>300</WorkToMake>
-      <MarketValue>8</MarketValue>
+      <MarketValue>15</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
     <techLevel>Neolithic</techLevel>
