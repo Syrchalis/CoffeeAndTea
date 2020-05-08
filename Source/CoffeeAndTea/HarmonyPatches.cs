@@ -26,8 +26,8 @@ namespace CoffeeAndTea
         [HarmonyPostfix]
         public static void GenerateStartingDrugPolicies_Postfix(DrugPolicyDatabase __instance)
         {
-            DrugPolicy drugPolicy = __instance.AllPolicies[0];
-            if (drugPolicy.label == "SocialDrugs".Translate())
+            DrugPolicy drugPolicy = __instance.AllPolicies.First(dp => dp.label == "SocialDrugs".Translate());
+            if (drugPolicy != null)
             {
                 drugPolicy[CoffeeAndTeaDefOf.SyrCoffee].allowedForJoy = true;
                 drugPolicy[CoffeeAndTeaDefOf.SyrTea].allowedForJoy = true;

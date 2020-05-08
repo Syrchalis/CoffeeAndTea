@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\bin\Debug\CoffeeAndTea.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\bin\Debug\CoffeeAndTea.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\bin\Debug\UnityEngine.IMGUIModule.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\obj\Debug\CoffeeAndTea.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\obj\Debug\CoffeeAndTea.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\obj\Debug\CoffeeAndTea.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\obj\Debug\CoffeeAndTea.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_CoffeeAndTea\Source\CoffeeAndTea\obj\Debug\CoffeeAndTea.pdb
