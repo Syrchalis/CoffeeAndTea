@@ -41,17 +41,14 @@
 			<li>VGP Vegetable Garden</li>
 		</mods>
 			<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationRemove">
-		  		<xpath>*/ThingDef[defName = "CPD_CoffeeBeans" or defName = "Rawtea" or defName = "Plant_Tea" or  or defName = "Plant_Coffee" or defName = "Coffee" or defName = "Cuptea"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>*/RecipeDef[defName = "BrewCoffee" or defName = "BulkBrewCoffee" or defName = "BrewTea" or defName = "BulkBrewTea"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>*/JoyGiverDef[defName = "VGP_DrinkSweetJoy"]/thingDefs[li = "Cuptea" or li = "Coffee"]</xpath>
-				</li>
-			</operations>
+				<operations>
+					<li Class="PatchOperationRemove">
+						<xpath>*/ThingDef[defName = "CPD_CoffeeBeans" or defName = "Rawtea" or defName = "Plant_Tea" or defName = "Plant_Coffee" or defName = "Coffee" or defName = "Cuptea"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>*/RecipeDef[defName = "BrewCoffee" or defName = "BulkBrewCoffee" or defName = "BrewTea" or defName = "BulkBrewTea"]</xpath>
+					</li>
+				</operations>
 			</match>
 	</Operation>
 
