@@ -2,14 +2,14 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName = "Plant_Hops" or defName = "Plant_Smokeleaf" or defName = "Plant_Psychoid"]/plant</xpath>
+		<xpath>*/ThingDef[defName = "Plant_Hops" or defName = "Plant_Smokeleaf" or defName = "Plant_Psychoid"]/plant</xpath>
 		<value>
 			<purpose>Health</purpose>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName = "Beer" or defName = "PsychiteTea"]/ingestible/ingestHoldOffsetStanding</xpath>
+		<xpath>*/ThingDef[defName = "Beer" or defName = "PsychiteTea"]/ingestible/ingestHoldOffsetStanding</xpath>
 		<value>
 			<ingestHoldOffsetStanding>
 				<northDefault>
@@ -30,52 +30,97 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName = "Beer"]/ingestible</xpath>
+		<xpath>*/ThingDef[defName = "Beer"]/ingestible</xpath>
 		<value>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
 		</value>
 	</Operation>     
 	
-	<Operation Class="PatchOperationSequence">
-	  <success>Always</success>
-	  <operations>
-		<li Class="PatchOperationTest">
-		  <xpath>Defs/ThingDef[defName = "CPD_CoffeeBeans"]</xpath>
-		</li>	
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/ThingDef[defName = "CPD_CoffeeBeans"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/ThingDef[defName = "Rawtea"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/ThingDef[defName = "Plant_Tea"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/ThingDef[defName = "Plant_Coffee"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/RecipeDef[defName = "BrewCoffee"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/RecipeDef[defName = "BulkBrewCoffee"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/RecipeDef[defName = "BrewTea"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/RecipeDef[defName = "BulkBrewTea"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/ThingDef[defName = "Coffee"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/ThingDef[defName = "Cuptea"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-		  <xpath>Defs/JoyGiverDef[defName = "VGP_DrinkSweetJoy"]/thingDefs[li = "Cuptea" or li = "Coffee"]</xpath>
-		</li>
-	  </operations>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+		  		<xpath>*/ThingDef[defName = "CPD_CoffeeBeans" or defName = "Rawtea" or defName = "Plant_Tea" or  or defName = "Plant_Coffee" or defName = "Coffee" or defName = "Cuptea"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>*/RecipeDef[defName = "BrewCoffee" or defName = "BulkBrewCoffee" or defName = "BrewTea" or defName = "BulkBrewTea"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>*/JoyGiverDef[defName = "VGP_DrinkSweetJoy"]/thingDefs[li = "Cuptea" or li = "Coffee"]</xpath>
+				</li>
+			</operations>
+			</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[1.0, 1.1] RimCuisine 2 Core</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[@Name = "RC2_PlantCoffeeBase"]/plant/harvestedThingDef</xpath>
+					<value>
+						<harvestedThingDef>SyrRawCoffee</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[@Name = "RC2_PlantTeaBase"]/plant/harvestedThingDef</xpath>
+					<value>
+						<harvestedThingDef>SyrRawTea</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[@Name = "RC2_PlantCoffeeBase" or @Name = "RC2_PlantTeaBase"]/plant</xpath>
+					<value>
+						<sowTags />
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>*/ThingDef[defName = "RC2_PlantCoffeeHydro" or defName = "RC2_RawCoffeeBeans" or defName = "RC2_Coffee" or defName = "RC2_PlantTeaHydro" or defName = "RC2_GreenTea" or defName = "RC2_RawTeaLeaves"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>*/RecipeDef[defName = "RC2_ProcessCoffee" or defName = "RC2_BrewTea"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>*/JoyGiverDef[defName = "RC2_DrinkCoffee" or defName = "RC2_DrinkGreenTea"]</xpath>
+				</li>
+			</operations>
+			</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimCuisine 2: Bottling and Booze Expansion (Continued)</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>*/RecipeDef[defName = "RC2_ProcessEnergyDrink" or defName = "RC2_ProcessEnergyDrinkBulk"]//thingDefs/li[text()="RC2_RawCoffeeBeans"]</xpath>
+					<value><li>SyrRawCoffee</li></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/RecipeDef[defName = "RC2_ProcessEnergyDrink" or defName = "RC2_ProcessEnergyDrinkBulk" or defName = "RC2_MakeIcedTea" or defName = "RC2_MakeIcedTeaBulk"]//thingDefs/li[text()="RC2_RawTeaLeaves"]</xpath>
+					<value><li>SyrRawTea</li></value>
+				</li>
+			</operations>
+			</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimCuisine 2 Meals and Munchies Expansion (Continued)</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>*/RecipeDef[defName = "RC2_ProcessCoffeeBulk" or defName = "RC2_BrewTeaBulk"]</xpath>
+				</li>
+			</operations>
+			</match>
 	</Operation>
 
 </Patch>
